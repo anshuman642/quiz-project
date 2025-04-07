@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Login</h2>
+    <input type="text" id="adminUser" placeholder="Username">
+    <input type="password" id="adminPass" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <div id="adminPanel" style="display:none;">
+      <h3>Add New Question</h3>
+      <input type="text" id="question" placeholder="Question"><br>
+      <input type="text" id="opt_a" placeholder="Option A"><br>
+      <input type="text" id="opt_b" placeholder="Option B"><br>
+      <input type="text" id="opt_c" placeholder="Option C"><br>
+      <input type="text" id="opt_d" placeholder="Option D"><br>
+      <input type="text" id="correct" placeholder="Correct Option (a/b/c/d)"><br>
+      <button onclick="addQuestion()">Add Question</button>
+
+      <h3>All Questions</h3>
+      <ul id="questionList"></ul>
+    </div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
